@@ -2,4 +2,149 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--bg-image);
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #000028;
+  font-family: 'IBM Plex mono', sans-serif;
+  font-size: 18px;
+}
+
+.header {
+  height: 100vh;
+  min-height: 41.75em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(auto, 1fr);
+  position: relative;
+}
+
+.header__dark-theme-decoration {
+  position: absolute;
+  top: 10px;
+  right: 38px;
+  font-weight: normal;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #FF0070;
+}
+.header__dark-theme-decoration::after {
+  content: " ";
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 8px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #FF0070;;
+  box-shadow: 0px 0px 4px 2px #FF0070;
+}
+
+.decorated-zone {
+  position: relative;  /* обязательно для абсолютного позиционирования */
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  top: 10px;      
+  right: 10px; 
+  width: 25px;
+  height: 25px; 
+  border-top: 1px solid #ff0077;
+  border-right: 1px solid #ff0077;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;      
+  left: 10px; 
+  width: 25px;
+  height: 25px; 
+  border-bottom: 1px solid #ff0077;
+  border-left: 1px solid #ff0077;
+}
+.header__theme-menu {
+  grid-column: 2;
+  grid-row: 2;
+  justify-items: end;
+  align-items: center;
+}
+
+.header__title {
+  grid-column: 1/-1;
+  grid-row: 3;
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  color: #DB00FF;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header__title span {
+  display: block;
+}
+
+.title-decor {
+  background-color: #FF0070;
+}
+
+.header__description {
+  margin-top: 55px;
+  margin-bottom: 66px;
+  grid-column: 1/-1;
+  grid-row: 4;
+  color: #000028;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.card__list {
+  background-color: #000028;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card__list-title {
+  color: #FF0070;
+  grid-row: 1;
+  font-weight: 700;
+  line-height: 23px;
+  font-size: 18px;
+  
+}
+
+.card {
+  font-size: 18px;
+}
+
+.card__title {
+  color: #000028;
+  grid-row: 2;
+  font-size: 18px; 
+}
+
+.card__text {
+  grid-row: 3;
+  font-weight: 400;
+  color: #F1B2CE;
+}
+
+.card:last-child {
+  margin-bottom: 50px;
+}
+
+.card__text-link {
+  text-shadow: 1px 1px #FF0070;
+  text-decoration: none;
+}
+
+.card__title-special {
+  font-weight: 400;
+  font-size: 18px;
+}
+.card__title-special:first-child {
+  margin-top: 20px;
 }
