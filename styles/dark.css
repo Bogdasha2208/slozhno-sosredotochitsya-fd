@@ -5,8 +5,16 @@
 */
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-image: url(../images/cover-image-dark.png);
+  --accent-color: #FF0070;
+  --bg-color: #000028;
+  --color-title: #DB00FF;
+  --card-title-color: #000028;
+  --card-list-title-color: #FF0070;
+  --card-text-color: #F1B2CE;
+  --font-size-base: 18px;
+  --font-weight-bold: 700;
+  --font-weight-bold: 400;
+  --title-shadow-default: 4px 4px var(--accent-color);
+  --title-shadow-light: 2px 2px var(--accent-color);
 }
