@@ -65,7 +65,6 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  bottom: 20px;
   left: 10px;
   bottom: 10px;
   width: 25px;
@@ -102,16 +101,17 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var( --card-list-title-color);
+  outline: 1px solid var(--card-list-title-color);
   pointer-events: none;
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: var( --card-title-color);
+  border-bottom: 1px solid var(--card-title-color);
 }
 
 .header__theme-menu-button:hover {
-  border-bottom: var( --card-title-color 0.5);
+  border-bottom: 1px solid var(--card-title-color);
+  opacity: 0.5;
 }
 
 .header__title {
@@ -139,7 +139,7 @@
   grid-row: 3;
   color: var(--card-title-color);
   font-weight: 700;
-  line-height: 23,4px;
+  line-height: 23.4px;
   align-self: center;
   margin-bottom: 20px;
 }
@@ -162,7 +162,6 @@
   color: var(--card-list-title-color);
   font-weight: 700;
   line-height: 23.4px;
-  
 }
 
 .card {
@@ -254,7 +253,6 @@
   .header {
     height: 100vh;
     background-repeat: no-repeat;
-    object-fit: cover;
     padding: 20px 20px 20px 20px;
     margin-bottom: 70px;
   }
@@ -403,10 +401,6 @@
 }
 
 @media (width >= 1024px) {
-
-  .page {
-    gap: 0px;
-  }
 
   .header {
     grid-template-columns: 1fr 1fr 1fr;
