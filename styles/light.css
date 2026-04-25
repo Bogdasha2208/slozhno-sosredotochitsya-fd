@@ -14,15 +14,14 @@
   --bg-color: #FFF1F7;
   --color-title: #FFC2E6;
   --card-title-color: #353430;
+  --hover-color: rgba(53, 52, 48, 0.5);
   --card-list-title-color: #353430;
   --card-text-color: #353430;
   --font-size-base: 18px;
   --font-weight-bold: 700;
-  --title-shadow-default: 4px 4px var(--accent-color);
-  --title-shadow-light: 2px 2px var(--accent-color);
 }
 
-:root.theme-light .header__dark-theme-decoration {
+:root.theme-light .header__item-decoration {
   display: none;
 }
 
@@ -33,15 +32,14 @@
   --bg-color: #FFF1F7;
   --color-title: #FFC2E6;
   --card-title-color: #353430;
+  --hover-color: rgba(53, 52, 48, 0.5);
   --card-list-title-color: #353430;
   --card-text-color: #353430;
   --font-size-base: 18px;
   --font-weight-bold: 700;
-  --title-shadow-default: 4px 4px var(--accent-color);
-  --title-shadow-light: 2px 2px var(--accent-color);
 }
 
-  .header__dark-theme-decoration {
+  .header__item-decoration  {
   display: none;
   }
 

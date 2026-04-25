@@ -10,10 +10,13 @@
   --bg-color: #000028;
   --color-title: #DB00FF;
   --card-title-color: #000028;
+  --hover-color: rgb(255, 0, 112, 0.5);
   --card-list-title-color: #FF0070;
   --card-text-color: #F1B2CE;
   --font-size-base: 18px;
   --font-weight-bold: 700;
-  --title-shadow-default: 4px 4px var(--accent-color);
-  --title-shadow-light: 2px 2px var(--accent-color);
+}
+
+:root.theme-dark .header__item-decoration {
+  display: block;
 }
