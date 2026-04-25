@@ -291,7 +291,6 @@
 
   .header__description {
     grid-column: 2;
-    max-width: 100%;
     max-width: 364px;
     margin-bottom: 40px;
   }
